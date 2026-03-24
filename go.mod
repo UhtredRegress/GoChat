@@ -1,4 +1,4 @@
-module github.com/UhtredRegression/GoChat
+module github.com/UhtredRegress/GoChat
 
 go 1.26.1
 
