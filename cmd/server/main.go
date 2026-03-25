@@ -5,8 +5,7 @@ import (
 )
 
 func main() {
-
 	application := app.NewApp()
-
+	application.RegisterHandler()
 	application.Run()
 }

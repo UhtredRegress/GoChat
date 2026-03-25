@@ -1,6 +1,9 @@
 package app
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/UhtredRegress/GoChat/internal/handler"
+	"github.com/gin-gonic/gin"
+)
 
 type App struct {
 	router *gin.Engine
@@ -11,6 +14,10 @@ func NewApp() *App {
 	return &App{router}
 }
 
-func (a *App) Run() {
+func (a *App) RegisterHandler() {
+	handler.RegisterUserHandler(a.router)
+}
 
+func (a *App) Run() {
+	a.router.Run()
 }
