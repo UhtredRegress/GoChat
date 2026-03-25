@@ -14,10 +14,10 @@ func createUserHandler(c *gin.Context) {
 	c.JSON(200, "Success")
 }
 
+
+
 func RegisterUserHandler(e *gin.Engine) {
-	api := e.Group("/api")
-	v1 := api.Group("/v1")
-	userApi := v1.Group("/user")
+	userApi := e.Group("/api/v1/user")
 	{
 		userApi.POST("create", createUserHandler)
 	}
