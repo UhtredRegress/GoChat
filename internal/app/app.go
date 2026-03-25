@@ -6,7 +6,7 @@ import (
 )
 
 type App struct {
-	router *gin.Engine
+	router *gin.Engine	
 }
 
 func NewApp() *App {
