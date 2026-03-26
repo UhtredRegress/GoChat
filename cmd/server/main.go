@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/UhtredRegress/GoChat/internal/app"
+	"github.com/gin-gonic/gin"
+	"github.com/UhtredRegress/GoChat/internal/handler"
 )
 
 func main() {
-	application := app.NewApp()
-	application.RegisterHandler()
-	application.Run()
+	r := gin.Default()
+	handler.RegisterUserHandler(r)
 }

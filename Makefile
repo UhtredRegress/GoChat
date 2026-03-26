@@ -1,4 +1,4 @@
-DB_URL=postgres://user:password@localhost:5432/dbname?sslmode=disable
+DB_URL=postgres://kevin:kube@localhost:5432/dbname?sslmode=disable
 
 install-tools:
 	go install github.com/sqlc-dev/sqlc/cmd/sqlc@v1.26.0
